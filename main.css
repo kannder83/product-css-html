@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  background: #724056;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.product-card {
+  box-shadow: 0.1rem 0.5rem 1.5rem rgb(83, 2, 43);
+  width: 30rem;
+  height: 45rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.product-card {
+  background: linear-gradient(
+    -45deg,
+    rgba(121, 54, 197, 0.761) 50%,
+    rgba(255, 255, 255, 0.5) 50%
+  );
+}
+
+.product-inner {
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.product-inner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-inner p {
+  color: #2b2d42;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-inner button {
+  border: 0.1rem solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  border-radius: 1rem;
+  padding: 1rem 5rem;
+  background: transparent;
+  cursor: pointer;
+  transition: background ease-in 0.25s;
+}
+
+.product-inner button:hover {
+  background: #fff;
+  color: #2b2d42;
+}
+
+.product-inner button::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f07a";
+  color: #fff;
+  position: absolute;
+  font-size: 1.5rem;
+  margin: 0 -1.5rem;
+}
+
+.product-inner button:hover::before {
+  color: #2b2d42;
+}
